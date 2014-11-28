@@ -1,0 +1,38 @@
+body{font-family: arial;}
+
+#module_login{
+	
+	width: 630px;
+margin: 0 auto;
+margin-top: 250px;
+padding: 15px;
+border: 1px solid black;
+border-radius: 8px;
+}
+.body_login{background:  url('../img/wall1.jpg');
+background-repeat: no-repeat;
+background-position-x: center;
+background-color: black}
+.container {
+width: 1024px;
+margin: 0 auto;
+}
+
+
+.body_login form#formulario {
+color: #A2005C;
+width: 600px;
+margin: 0 auto;
+margin-top: 223px;
+background: white;
+padding: 30px;
+border-radius: 30px;
+border: 4px solid #16586E;
+}
+
+.body_login form#formulario input {
+margin-left: 2px;
+}
+.body_login form#formulario label {
+margin-left: 2px;
+}

@@ -1,0 +1,106 @@
+    <!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="{{ PROJECT_NAME }}, {{ PROJECT_DESCRIPTION }}">
+            <meta name="tamarindolabs" content="">
+            <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico">
+            <title>{% block title %}{% endblock %}</title>
+            <link href="{{ STATIC_URL }}css/style_sas.css" rel="stylesheet">
+            <link href="{{ STATIC_URL }}css/base.css" rel="stylesheet">
+            <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
+            {% block style %}
+            {% endblock %}
+        </head>
+        <body>
+
+        <header>
+          <div class="container ">
+              <div class="left">
+
+              </div>
+              <div class="right">
+                <div id="myinfo">
+                <a href="/misdatos">
+                  <div class="glyphicon glyphicon-user"></div>
+                  <span class="nombre"> {{usuario.get_full_name}} </span>
+                 </a>
+                </div>
+                <div id="notificaciones">
+                  <span class="glyphicon glyphicon-flag"></span>
+                </div>
+                <div id="configuracion">
+                  <span class="glyphicon glyphicon-wrench"></span>
+                </div>
+                 <a  href="{% url 'v_logout' %}"><div id="off">
+                  <span class="glyphicon glyphicon-off"></span>
+                </div></a>
+              </div>
+          </div>
+        </header>
+        <!-- NAVIGATION BAR -->
+                <div class="body" >
+                  <div id="app_cliente">
+                    <div class="left " >
+                      <nav class="menu_principal">
+                        <ul>
+                          <li> <a href="/destinos" id="link_catalogo_destinos">Destions</a> </li>
+                          <li> <a href="/buses" id="link_catalogo_destinos">Buses</a> </li>
+                          <li> <a href="/generarorden" id="link_catalogo_destinos">Generar orden</a> </li>
+                        
+                        </ul>
+                      </nav>
+                      <div id="chat">
+                      </div>
+                    </div>
+                    <div id="principal_adm">
+                      <div id="content_render"> 
+                        {% block content %}
+                      
+
+                        {% endblock %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        <div id="load" ></div>
+        <!-- footer -->
+        <footer>
+             <div id="cneter_footer">
+               
+             </div>
+        </footer>
+
+        <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.min.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/sequence.jquery.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/main.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/main_sas.js"></script>
+           <script type="text/javascript">
+                $( document ).ready(function() {
+                  function menuGestor(self)
+                  {  
+                        $('.menu_interno').hide();
+                        $(this).children('ul').show();
+                  }
+                  function salir(self)
+                  { 
+                        sendAjax('logout',"","",{'met':'post'});
+                  }
+                  $(function(){
+                        $('#slider_app div:gt(0)').hide();
+                       /*setInterval(function(){
+                          $('#slider_app div:first-child').fadeOut(0).next('div').fadeIn(6000).end().appendTo('#slider_app');}, 6100);*/
+                  
+                    });
+                 $('.menu_principal ul li').on('click',menuGestor); 
+                 /*$('#off').on('click',salir);*/
+                });
+              
+            </script>
+            {% block js %}
+           
+            {% endblock %}
+         
+        </body>
+    </html>

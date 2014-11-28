@@ -1,0 +1,26 @@
+	{% extends "index.html" %}
+	{% load i18n %}
+	{% block title %}{% trans 'Inicio' %}{% endblock %}
+
+
+
+	{% block content %}
+
+	{%for destino in destinos%}
+
+	<p><img src="{{MEDIA_URL}}{{destino.foto}}">{{destino.lugar}}</p>
+	
+
+	{% endfor %}
+
+
+
+	{% endblock %}
+
+
+	{% block style %}
+	{% endblock %}
+
+	{% block js %}
+
+	{% endblock %}

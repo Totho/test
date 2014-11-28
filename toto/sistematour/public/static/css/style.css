@@ -1,0 +1,163 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600,400);
+.pnl {background-size: 100% 100% !important;}
+/*----------MEDIAS---------*/
+@media (min-width: 1200px ){
+.link_producto_portafolio{ height: 175px}
+}
+@media (max-width: 1200px ) and (min-width: 980px ){
+.link_producto_portafolio{ height: 140px}
+}
+@media (max-width: 980px ) and (min-width: 767px ) {
+body {padding-right: 0px !important;padding-left: 0px !important;}
+.pnl {background-size: auto !important;}
+.pnl h3{line-height: 40px !important;font-size: 38px !important;}
+#panelDisenoDesarrollo .panelvisible .iconoabp {right: 43% !important;}
+#panelAdminwebsite .panelvisible .iconoabp{left: 43% !important;}
+#panelAppmoviles .panelvisible .iconoabp { right: 43% !important;}
+.link_producto_portafolio{ height: 100px}
+}
+
+@media (max-width: 979px)  {
+.navbar-inner .container {padding-left: 0% !important;margin-left: 0px !important ;text-align: center !important;}
+.wrapper {margin-top:-20px !important;}
+.tamLogo{position: absolute !important;top:5px !important;left:47% !important;}
+}
+
+@media (min-width: 979px)  {
+.posicionadorbase {margin-top: 40px;}
+}
+
+@media (max-width: 767px){
+body {padding-right: 0px !important;padding-left: 0px !important;}
+.wrapper {padding-right: 20px !important;padding-left: 20px !important;}
+.pnl h3{line-height: 40px !important;font-size: 38px !important;}
+.link_producto_portafolio{ height: 100px}
+
+.items_panel {
+width: 473px !important;
+margin: 0px auto;
+ }
+} 
+
+@media (max-width: 630px){
+	.link_producto_portafolio{ height: 80px}
+}
+
+/*----------MEDIAS---------*/
+.icons{background:url("../img/icons.png") 0 0 no-repeat;height:38px;margin-right:10px;display:inline-block;vertical-align:middle;}
+.icon-cloud{background-position:0px 0px;width:37px;}
+.icon-engine{background-position:-40px 0px;width:37px;}
+.icon-mobil{background-position:-80px 0px;width:20px;}
+.black-icons{background:url("../img/black-icons.gif") 0 0 no-repeat;height:25px;width:23px;margin-right:10px;display:inline-block;vertical-align:middle;}
+.icon-heart{background-position:0px 0px;}
+.icon-star{background-position:-25px 0px;}
+.icon-pig{background-position:-50px 0px;}
+.icon-path{background-position:-80px 0px;}
+.icon-performance{background-position:-105px 0px;width:25px;}
+.icon-bulb{background-position:-135px 0px;width:15px;}
+.icon-calendar{background-position:-155px 0px;}
+.icon-feedback{background-position:-180px 0px;width:28px;}
+body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;color:#2d2f32;background:url("../img/body_bg.gif") 0 0 repeat-x #f8f8f8;background:url("../img/nav_bg.gif") top center no-repeat,url("../img/body_bg.gif") 0 0 repeat-x #f8f8f8;}
+h1{font-family:CabinRegular,Helvetica,Arial,sans-serif;font-size:48px;line-height: 47px;font-style:normal;font-variant:normal;font-weight:normal;color:#121518;text-align:center;text-shadow:1px 1px 0 #ffffff;}h1 span{color:#009ee0;}
+h1 strong{font-family:CabinBold,Helvetica,Arial,sans-serif;font-weight:bold;}
+h1 .h1hidden{display:none;}
+.navbar .tamLogo{display:block;float:left;}
+.navbar .nav{margin:0 5px;}.navbar .nav li a{font-family:BebasRegular,Helvetica,Arial,sans-serif;font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;color:#999999;float:none;padding:9px 10px 11px;line-height:19px;text-decoration:none;text-shadow:0 1px 0 #000000;}
+.navbar-inner .container{padding-left:50%;margin-left:-172px;}
+.slide_bright hr{background:url("../img/slide_brigth_bottom.png") 0 0 repeat-x;height:98px;width:100%;border:none;border-bottom:0;margin-top:0px;margin-bottom:-70px;}
+.info-box{border:1px solid;border-color:#bbbbbb;background:#f8f8f8;width:98%;max-width:400px;margin:0 auto 10px;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;box-shadow:0 0 7px rgba(0, 0, 0, 0.2);-moz-box-shadow:0 0 7px rgba(0, 0, 0, 0.2);-webkit-box-shadow:0 0 7px rgba(0, 0, 0, 0.2);}.info-box .info-box-header{background:#f0f0f0;min-height:50px;border-bottom:solid 1px #bbbbbb;border-top-right-radius:10px;border-top-left-radius:10px;-moz-border-top-right-radius:10px;-moz-border-top-left-radius:10px;-webkit-border-top-right-radius:10px;-webkit-border-top-left-radius:10px;}.info-box .info-box-header h2{padding:7px 0 0 20px;font-family:CabinBold,Helvetica,Arial,sans-serif;font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;color:#121518;text-shadow:1px 1px 0 #ffffff;}
+.info-box .info-box-content{margin:20px;font-family:PolyRegular,Helvetica,Arial,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;color:#2d2f32;}.info-box .info-box-content .btn{margin-top:10px;margin-left:10px;}
+.whyus-header{text-align:center;}.whyus-header h3{font-family:CabinRegular,Helvetica,Arial,sans-serif;font-size:30px;font-style:normal;font-variant:normal;font-weight:normal;color:#121518;text-shadow:1px 1px 0 #ffffff;}
+.whyus{margin:30px 0;}.whyus h4{font-family:CabinBold,Helvetica,Arial,sans-serif;font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;color:#121518;}
+.whyus p{font-family:PolyRegular,Helvetica,Arial,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;color:#2d2f32;padding:10px 5px;}
+hr{width:100%;border-top:1px solid #E2DEDE;}
+footer{position:relative;background:url("../img/footer-bright.jpg") center 0 no-repeat;height:265px;width:100%;}footer figure,footer img{margin:0;position:absolute;}
+footer .footer-box{bottom:0;background:url("../img/footer-box.jpg") #121518 center 0 no-repeat;height:132px;width:100%;}
+footer .footer-logo{left:50%;margin-left:-40px;width:81px;height:76px;bottom:25px;}
+footer .paper{background:url("../img/footer-leaf.png") center 40px transparent no-repeat;width:406px;height:102px;margin-left:-203px;left:50%;bottom:119px;cursor:pointer;transition:background-position 0.8s ease-out;-webkit-transition:background-position 0.8s ease-out;-moz-transition:background-position 0.8s ease-out;-o-transition:background-position 0.8s ease-out;}
+footer .paper:hover{background-position:center 0;}
+footer .paper-shadow{height:58px;width:404px;bottom:0;}
+footer .footer-contact{width:218px;height:58px;bottom:10px;margin-left:90px;opacity:0;transition:opacity 0.6s cubic-bezier(0.47, 0, 0.55, 0.315);-webkit-transition:opacity 0.6s cubic-bezier(0.47, 0, 0.55, 0.315);-moz-transition:opacity 0.6s cubic-bezier(0.47, 0, 0.55, 0.315);-o-transition:opacity 0.6s cubic-bezier(0.47, 0, 0.55, 0.315);}
+footer .footer-contact:hover{opacity:1;}
+.btn{font-family:CabinBold,Helvetica,Arial,sans-serif;font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;color:#ffffff;text-shadow:1px 1px 2px rgba(0, 57, 180, 0.6);padding:7px 9px;}
+@font-face{font-family:'BebasRegular';src:url('../fonts/Bebas/BEBAS___-webfont.eot');src:url('../fonts/Bebas/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/Bebas/BEBAS___-webfont.woff') format('woff'),url('../fonts/Bebas/BEBAS___-webfont.ttf') format('truetype'),url('../fonts/Bebas/BEBAS___-webfont.svg#BebasRegular') format('svg');font-weight:normal;font-style:normal;}@font-face{font-family:'CabinRegular';src:url('../fonts/Cabin/Cabin-Regular-webfont.eot');src:url('../fonts/Cabin/Cabin-Regular-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/Cabin/Cabin-Regular-webfont.woff') format('woff'),url('../fonts/Cabin/Cabin-Regular-webfont.ttf') format('truetype'),url('../fonts/Cabin/Cabin-Regular-webfont.svg#CabinRegular') format('svg');font-weight:normal;font-style:normal;}@font-face{font-family:'CabinBold';src:url('../fonts/Cabin/Cabin-Bold-webfont.eot');src:url('../fonts/Cabin/Cabin-Bold-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/Cabin/Cabin-Bold-webfont.woff') format('woff'),url('../fonts/Cabin/Cabin-Bold-webfont.ttf') format('truetype'),url('../fonts/Cabin/Cabin-Bold-webfont.svg#CabinBold') format('svg');font-weight:normal;font-style:normal;}@font-face{font-family:'PolyItalic';src:url('../fonts/Poly/Poly-Italic-webfont.eot');src:url('../fonts/Poly/Poly-Italic-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/Poly/Poly-Italic-webfont.woff') format('woff'),url('../fonts/Poly/Poly-Italic-webfont.ttf') format('truetype'),url('../fonts/Poly/Poly-Italic-webfont.svg#PolyItalic') format('svg');font-weight:normal;font-style:normal;}@font-face{font-family:'PolyRegular';src:url('../fonts/Poly/Poly-Regular-webfont.eot');src:url('../fonts/Poly/Poly-Regular-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/Poly/Poly-Regular-webfont.woff') format('woff'),url('../fonts/Poly/Poly-Regular-webfont.ttf') format('truetype'),url('../fonts/Poly/Poly-Regular-webfont.svg#PolyRegular') format('svg');font-weight:normal;font-style:normal;}
+.posicionadorbase{overflow: hidden;}
+/*  servicios */
+#slide_servicos{background-size: 100% 100%; background-position: center; height: 450px;position: relative;margin: 0px auto 0;min-width: 960px;overflow: hidden;background: url(../img/bg-fondo-servicios.png);}
+.panel_servicios{background: white;margin-top: 22px;margin-bottom: 22px;border-radius: 5px;overflow: hidden;min-width: 640px;box-shadow: 0px 0px 14px rgb(124, 124, 124);}
+.panelvisible {min-height: 345px;position: relative;}
+.pnl{width: 50%;float: left;height: 345px;}
+.pnl h3{line-height: 55px;font-size: 53px;font-weight: lighter;margin: 40px;}
+.iconoabp{position:absolute; width: 94px;height: 94px;top: 120px;transition: 3S;}
+.iconoabp:hover {transform:rotate(360deg);
+-webkit-transform:rotate(360deg); /* Safari */}
+#panelDisenoDesarrollo{border-bottom: solid 3px #009BDB; }
+#panelDisenoDesarrollo .panelvisible .pnl_right {background: url("../img/pnldesarrolloweb.png") right 0 no-repeat;}
+#panelDisenoDesarrollo .panelvisible .iconoabp{background: url("../img/bnt_cob_pnl.png") right 0 no-repeat; right: 40%}
+#panelAdminwebsite{border-bottom: solid 3px #BA007C;}
+#panelAdminwebsite .panelvisible .pnl_left {background: url("../img/pnladministracion.png") left 0 no-repeat;}
+#panelAdminwebsite .panelvisible .iconoabp {background: url("../img/bnt_admin_pnl.png") left 0 no-repeat; left: 40%}
+#panelAppmoviles{border-bottom: solid 3px #FEEE00;}
+#panelAppmoviles .panelvisible .pnl_right {background: url("../img/pnldapps.png") right 0 no-repeat;background-position-y: -4px;}
+#panelAppmoviles .panelvisible .iconoabp {background: url("../img/iconoamarillo.png") right 0 no-repeat; right: 40%}
+#panelPorqueNosotros .panelvisible {background: url("../img/pnlporque.png") center 0 no-repeat; background-size: 100% 100%;}
+#panelPortafolio{background: url("../img/pnlportafolio.png") center 0 no-repeat; background-size: 100% 100%; min-height: 345px;	margin-top: 22px;margin-bottom: 22px;border-radius: 5px;overflow: hidden;}
+.panelinvisible {display: none;}
+.bnt_retractil{height: 40px}
+#panelDisenoDesarrollo .panelinvisible .pnlinviprincipal{height: 900px}
+#panelDisenoDesarrollo .panelinvisible .bnt_retractil{background: #009BDB}
+#panelAdminwebsite .panelinvisible .pnlinviprincipal{height: 700px}
+#panelAdminwebsite .panelinvisible .bnt_retractil{background:#BA007C;}
+#panelAppmoviles .panelinvisible .pnlinviprincipal{height: 1000px}
+#panelAppmoviles .panelinvisible .bnt_retractil{background:#FEEE00;}
+.iconoabp {cursor: pointer;}
+
+/* Portafolio */
+
+#panelSelectProduct {
+margin-top: 35px;
+margin-bottom: 35px;
+}
+.panel_portafolio{
+display: none;
+}
+.items_panel .item {
+height: 135px;
+width: 204px;
+display: block;
+margin: 18px;
+border: 3px solid white;
+float: left;
+border-radius: 10px;
+margin: 12px;
+}
+.info_panle{
+height: 175px;
+border: 2px solid white;
+border-radius: 13px;
+margin: 0 auto !important;
+float: none !important;
+}
+
+.link_producto_portafolio {
+background: black;
+width: 16%;
+display: block;
+float: left;
+margin-right: 5%;
+border-radius: 50%;
+cursor: pointer;
+opacity: 0.6;
+}
+.link_producto_portafolio:hover { opacity: 1}
+.center_Interno{ min-width:460px }
+
+.link_producto_portafolio#Diseno{ background: #009EE0;}
+.link_producto_portafolio#Diseno:hover{ box-shadow: 0px 0px 28px #009EE0;}
+.link_producto_portafolio#Paginasweb{ background: #E2007A;}
+.link_producto_portafolio#Paginasweb:hover{ box-shadow: 0px 0px 28px #E2007A;}
+.link_producto_portafolio#Aplicaciones{ background: #FFED00;}
+.link_producto_portafolio#Aplicaciones:hover{box-shadow: 0px 0px 28px #FFED00;}
+.link_producto_portafolio#SocialMedia{ background: #009664;}
+.link_producto_portafolio#SocialMedia:hover{box-shadow: 0px 0px 28px #009664;}
+.link_producto_portafolio#AppsMovil:hover{box-shadow: 0px 0px 28px black;}

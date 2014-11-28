@@ -1,0 +1,225 @@
+body{ font-family: Arial}
+
+/* ------------------ .- heder -. ------------------------  */
+body > header {background: black;height: 50px; width: 100%; z-index: 9; position: fixed;}
+div#app_cliente {padding-top: 50px;}
+.left{float: left;}
+.right{ float: right;}
+#select_empresa {width: 200px;height: 50px;}
+#empresa { ;width: 100%;height: 100%;position: relative;}
+#empresas {background: black; z-index: 10; display: none;position: absolute;width: 200px;height: auto;}
+#empresas ul { padding: 0px;margin: 0px}
+#empresas ul li{width: 200px;height: 50px;}
+#select_empresa:hover #empresas{display: block;}
+.item_hover{ display: none}
+.item_empresa{height: 50px;width: 200px}
+.item_empresa:hover .item_hover {
+background: white;
+opacity: 0.3;
+position: relative;
+top: -50px;
+z-index: 80000;
+display: block;}
+header .right div{float: left;}
+#myinfo {cursor: pointer;width: 158px;color: #FFF;line-height: 50px;margin: 0px 10px;overflow: visible;}
+#myinfo .glyphicon {padding: 14px 8px 0px 3px;}
+header .right div .glyphicon {font-size: 22px;color: white;padding: 14px;}
+.right .nombre{margin-bottom: 3px}
+#select_empresa .l_logo {width: 50px;height: 50px;padding: 5px;float: left;}
+#select_empresa .l_title {width: 100%;line-height: 50px;padding-left: 10px;color: white;}
+#select_empresa a{text-decoration: none !important;}
+.glyphicon{cursor: pointer;}
+/* ----------------------------------------------menu------------------------------  */
+.wrapper {
+margin: 0 auto;
+overflow: hidden;
+height: auto;
+}
+.menu_principal {
+background: gainsboro;
+padding: 12px 5px;
+position: fixed;
+height: 100%;
+}
+
+@media (max-width: 992px) {
+
+}
+@media (min-width: 992px)  {
+
+}
+
+ul{padding: 0px;
+	margin: 0px;
+	list-style:none;}
+
+.menu_principal ul{}
+
+.menu_principal ul li {
+width: 165px;
+padding: 6px 10px;
+}
+.menu_principal ul li:hover{
+color: red;
+}
+
+.menu_interno{
+ display: none;
+}
+/*----------------------------------------------slider------------------------------------*/
+#slider_app {
+width: 100%;
+border-radius: 8px;
+}
+#slider_app div {
+
+}
+#slider_app img {
+width: 100%;
+height: 240px;
+}
+
+
+/*---------------------------------------contenedor---------------------------------------------------*/
+#content_render {
+overflow: hidden;
+width: 100%;
+height: auto;
+padding: 15px 5px;
+}
+#principal_adm{
+	width: 65%;
+	margin: 0 auto;
+	left: 90px;
+	position: relative;
+	padding-top: 75px;
+}
+
+
+/* ...........................................index.................................. */
+div#separador_1 {
+height: 7px;
+background: rgb(23, 63, 0);
+
+}
+
+div#center_new {
+overflow: hidden;
+border-top: 0px;
+border: 2px rgb(196, 196, 196) solid;
+}
+#center_new .left {
+width: 70%;
+height: 100%;
+}
+#center_new .right {
+width: 30%;
+height: 100%;
+}
+div.notification {
+margin-top: 25px;
+margin-bottom: 25px;
+}
+.g_msg {
+background: blue;
+}
+.g_noti{
+	background: red;
+}
+
+div.notification div.circle {
+width:120px;
+height:120px;
+border: 5px rgb(228, 241, 185) solid;
+margin: 0 auto;
+border-radius: 72px;
+}
+
+.notification .noti_num {
+font-size: 52px;
+margin-top: 21px;
+margin-bottom: 0px;
+text-align: center;
+color: white;
+line-height: 51px;
+}
+.notification .noti {
+font-size: 12px;
+text-align: center;
+color: white;
+}
+.new_blog .title {
+font-size: 17px;
+font-weight: bold;
+border-bottom: 2px black solid;
+padding: 7px 0px;
+}
+/*.............................................produtos..........................................................*/
+div.heard_gp {
+height: 45px;
+background: black;
+}
+
+div.heard_gp h2 {
+line-height: 45px;
+color: white;
+padding-left: 25px;
+}
+div.lprodutos_gp {
+height: 110px;
+width: 110px;
+background: red;
+float: left;
+border-radius: 55px;
+margin: 12px;
+cursor: pointer;
+}
+div.lprodutos_gp span {
+color: white;
+display: block;
+margin-top: 35px;
+text-align: center;
+font-weight: bold;
+
+}
+.gruop_produc {
+margin-bottom: 30px;
+}
+div.body_gp {
+padding: 10px;
+background: rgb(247, 247, 247);
+overflow: hidden;
+}
+div.descripcion_gp {
+display: none;overflow: hidden;
+}
+
+div.panel_descripciones {
+padding: 15px;
+background: rgb(210, 255, 142);
+}
+.new_blog {
+width: 92%;
+margin: 0 auto;
+}
+.content_blog img {  float: left;margin-right: 13px;}
+
+.item_blog {
+overflow: hidden;
+margin: 11px 0px;
+}
+.new_blog #paginador { margin-bottom: 20px}
+
+.my_pro {
+overflow: hidden;
+height: 80px;
+background: rgb(248, 246, 246);
+padding: 12px;
+}
+#content_render td {
+border: 1px solid black;
+}
+div#content_render img {
+width: 200px;
+margin-right: 20px;
+}

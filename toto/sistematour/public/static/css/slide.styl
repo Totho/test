@@ -1,0 +1,42 @@
+@import "nib/vendor"
+
+#why-us
+    height auto
+    min-height 250px
+    margin 40px auto
+    position relative
+    width 50%
+    & > .sequence-canvas
+    	padding 0
+    	height 100%
+    	width 100%
+    	li > *
+            position absolute
+        & > li
+            position absolute
+            width 100%
+            height 100%
+            z-index 1
+            background-color #fff
+            list-style none
+    .fa
+    	font-size 2.7rem
+
+.prev
+.next 
+	position absolute !important
+	padding 0
+	top 50%
+	margin-top -1.35rem
+	color lighten(#000,70%)
+	z-index 9
+	cursor pointer
+
+	& :hover 
+		color lighten(#000,50%)
+
+.prev
+	left -2.5rem
+.next
+	right -2.5rem
+	

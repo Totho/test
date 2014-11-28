@@ -1,0 +1,36 @@
+	{% extends "index.html" %}
+	{% load i18n %}
+	{% block title %}{% trans 'Inicio' %}{% endblock %}
+
+
+
+	{% block content %}
+
+
+		{{usuario.get_full_name}}
+
+	<form action="/registardatos"  enctype="multipart/form-data" method="POST">
+		<p><label>cedula :</label><input name="cedula" value="{{perfil.cedula}}" required type="text"></p>
+		<p><label>celular :</label><input name="celular" type="text"></p>
+		<p><label>dirrecion :</label><input name="direccion"></p>
+		<p><label>foto :</label><input name="foto" type="file"></p>
+		<input name="enviar" value="enviar" type="submit">		
+		<select name="pereira">
+			<option value="1"> pereira</option>
+			<option value="2"> armenia</option>
+		</select>
+{% csrf_token %}
+
+	</form>
+	
+
+	{% endblock %}
+
+	{% block style %}
+
+
+	{% endblock %}
+
+	{% block js %}
+
+	{% endblock %}

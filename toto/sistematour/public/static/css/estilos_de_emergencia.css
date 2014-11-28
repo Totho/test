@@ -1,0 +1,34 @@
+section#services {
+overflow: hidden;
+}
+
+.wrapper-info-box {
+width: 1240px;
+margin: 0 auto;
+}
+
+.wrapper-info-box .info-box{ float: left;max-width: 350px;margin: 30px; border-radius: 0px }
+
+.wrapper-info-box .info-box h2{ text-align: center;padding-left: 0px;font-size: 29px}
+
+.wrapper-info-box .info-box p{ text-align: center;padding-left: 0px;font-size: 18px}
+.wrapper-info-box .info-box  a{  }
+.icons {
+background: url("../img/icons.png") 0 0 no-repeat;
+height: 38px;
+margin-right: 10px;
+display: inline-block;
+vertical-align: middle;
+}
+.icon-engine {
+background-position: -40px 0px;
+width: 37px;
+}
+.icon-cloud {
+background-position: 0px 0px;
+width: 37px;
+}
+.icon-mobil {
+background-position: -80px 0px;
+width: 20px;
+}

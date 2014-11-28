@@ -1,0 +1,308 @@
+// IMPORTS
+// -------------------------
+@import "icons";
+
+// VARIABLES
+// -------------------------
+@main-bg: #f8f8f8;
+@body-text: #2d2f32;
+@dark-gray: #121518;
+@blue: #009ee0;
+@gray-navbar: #999;
+@border-color: #bbbbbb;
+@separator: #cfcfcf;
+
+
+// MIXINS
+// -------------------------
+
+.my-font ( @font: "Helvetica Neue", @size: 13px, @color: @body-text ) {
+	font-family: @font, Helvetica, Arial, sans-serif;
+	font-size: @size;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	color: @color
+}
+
+.box-shadow (@x: 0, @y: 0, @blur: 1px, @color: #000) {
+  box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+}
+
+.border-radius ( @borders, @radius ) when ( @borders = 0 ) {
+	border-radius: @radius;
+	-moz-border-radius: @radius;
+	-webkit-border-radius: @radius;
+}
+
+.border-radius ( @borders, @radius ) when ( @borders = 1 ) {
+	border-top-right-radius: @radius;
+	border-top-left-radius: @radius;
+	-moz-border-top-right-radius: @radius;
+	-moz-border-top-left-radius: @radius;
+	-webkit-border-top-right-radius: @radius;
+	-webkit-border-top-left-radius: @radius;
+}
+
+// MAIN
+// -------------------------
+
+body {
+	margin: 0;
+	.my-font ();
+	background: url("../img/body_bg.gif") 0 0 repeat-x @main-bg; /* Fallback IE < 9 */
+	background: url("../img/nav_bg.gif") top center no-repeat, url("../img/body_bg.gif") 0 0 repeat-x @main-bg;
+}
+
+h1 {
+	.my-font ( CabinRegular, 48px, @dark-gray );
+	text-align: center;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+	span { color: @blue; }
+	strong {
+		font-family: CabinBold, Helvetica, Arial, sans-serif;
+		font-weight: bold;
+	}
+	.h1hidden { display: none; }
+}
+
+.navbar {
+	.tamLogo {
+		display: block;
+		float: left;
+	}
+
+	.nav {
+		margin: 0 5px;
+		li {
+			a{
+				.my-font ( BebasRegular, 14px, @gray-navbar );
+				float: none;
+				padding: 9px 10px 11px;
+				line-height: 19px;
+				text-decoration: none;
+				text-shadow: 0 1px 0 rgba(0, 0, 0, 1);
+			}
+		}
+	}
+	
+}
+
+.navbar-inner .container {
+	padding-left: 50%;
+	margin-left: -172px;
+}
+
+.slide_bright hr {
+	background: url("../img/slide_brigth_bottom.png")  0 0 repeat-x;
+	height: 98px;
+	width: 100%;
+	border: none;
+	border-bottom: 0;
+	margin-top: 0px;
+	margin-bottom: -70px;
+}
+
+.info-box {
+	border: 1px solid;
+	border-color: @border-color;
+	background: @main-bg;
+	width: 98%;
+	max-width: 400px;
+	margin: 0 auto 10px;
+	.border-radius ( 0, 10px );
+	.box-shadow ( 0, 0, 7px, rgba(0,0,0,0.2) );
+
+	.info-box-header {
+		background: #f0f0f0;
+		min-height: 50px;
+		border-bottom: solid 1px @border-color;
+		.border-radius ( 1, 10px );
+
+		h2 {
+			padding: 7px 0 0 20px;
+			.my-font ( CabinBold, 18px, @dark-gray );
+			text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+		}
+	}
+
+	.info-box-content {
+		margin: 20px;
+		.my-font ( PolyRegular, 13px, @body-text );
+		.btn {
+			margin-top: 10px;
+			margin-left: 10px;
+		}
+	}
+}
+
+.whyus-header {
+	text-align: center;
+
+	h3 {
+		.my-font ( CabinRegular, 30px, @dark-gray );
+		text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+	}
+
+}
+
+.whyus {
+	margin: 30px 0;
+	h4 { .my-font ( CabinBold, 18px, @dark-gray ) }
+	p {
+		.my-font ( PolyRegular, 13px, @body-text );
+		padding: 10px 5px;
+
+	}
+}
+
+hr {
+	width: 100%;
+	border-top: 1px solid #E2DEDE;
+}
+
+// FOOTER
+// -------------------------
+
+footer {
+	position: relative;
+	margin-top: -30px;
+	background: url("../img/footer-bright.jpg") center 0 no-repeat;
+	height: 265px;
+	width: 100%;
+
+	figure, img { 
+		margin: 0;
+		position: absolute;
+	}
+
+	.footer-box {
+		bottom: 0;
+		background: url("../img/footer-box.jpg") @dark-gray center 0 no-repeat;
+		height: 132px;
+		width: 100%;
+	}
+
+	.footer-logo {
+		left: 50%;
+		margin-left: -40px;
+		width: 81px;
+		height: 76px;
+		bottom: 25px;
+	}
+
+	.paper {
+		background: url("../img/footer-leaf.png") center 40px transparent no-repeat;
+		width: 406px;
+		height: 102px;
+		margin-left: -203px;
+		left: 50%;
+		bottom: 119px;
+		cursor: pointer;
+
+		transition: background-position 0.8s ease-out;
+		-webkit-transition: background-position 0.8s ease-out;
+		-moz-transition: background-position 0.8s ease-out;
+		-o-transition: background-position 0.8s ease-out;		
+	}
+
+	.paper:hover {
+		background-position: center 0;
+	}
+
+	.paper-shadow {
+		height: 58px;
+		width: 404px;
+		bottom: 0;
+	}
+
+	.footer-contact {
+		width: 218px;
+		height: 58px;
+		bottom: 10px;
+		margin-left: 90px;
+		opacity: 0;
+
+		transition: opacity 0.6s cubic-bezier(0.470, 0.000, 0.550, 0.315);
+		-webkit-transition: opacity 0.6s cubic-bezier(0.470, 0.000, 0.550, 0.315);
+		-moz-transition: opacity 0.6s cubic-bezier(0.470, 0.000, 0.550, 0.315);
+		-o-transition: opacity 0.6s cubic-bezier(0.470, 0.000, 0.550, 0.315);
+	}
+
+	.footer-contact:hover {
+		opacity: 1;
+	}
+}
+
+
+//    BUTTONS HACKS
+// -------------------------
+
+.btn {
+	.my-font ( CabinBold, 16px, #fff);
+	text-shadow: 1px 1px 2px rgba(0, 57, 180, 0.6);
+	padding: 7px 9px;
+}
+
+//    FONTS
+// -------------------------
+
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('../fonts/Bebas/BEBAS___-webfont.eot');
+    src: url('../fonts/Bebas/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Bebas/BEBAS___-webfont.woff') format('woff'),
+         url('../fonts/Bebas/BEBAS___-webfont.ttf') format('truetype'),
+         url('../fonts/Bebas/BEBAS___-webfont.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CabinRegular';
+    src: url('../fonts/Cabin/Cabin-Regular-webfont.eot');
+    src: url('../fonts/Cabin/Cabin-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Cabin/Cabin-Regular-webfont.woff') format('woff'),
+         url('../fonts/Cabin/Cabin-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Cabin/Cabin-Regular-webfont.svg#CabinRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'CabinBold';
+    src: url('../fonts/Cabin/Cabin-Bold-webfont.eot');
+    src: url('../fonts/Cabin/Cabin-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Cabin/Cabin-Bold-webfont.woff') format('woff'),
+         url('../fonts/Cabin/Cabin-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Cabin/Cabin-Bold-webfont.svg#CabinBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PolyItalic';
+    src: url('../fonts/Poly/Poly-Italic-webfont.eot');
+    src: url('../fonts/Poly/Poly-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Poly/Poly-Italic-webfont.woff') format('woff'),
+         url('../fonts/Poly/Poly-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/Poly/Poly-Italic-webfont.svg#PolyItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PolyRegular';
+    src: url('../fonts/Poly/Poly-Regular-webfont.eot');
+    src: url('../fonts/Poly/Poly-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Poly/Poly-Regular-webfont.woff') format('woff'),
+         url('../fonts/Poly/Poly-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Poly/Poly-Regular-webfont.svg#PolyRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

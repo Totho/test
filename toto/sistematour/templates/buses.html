@@ -1,0 +1,27 @@
+	{% extends "index.html" %}
+	{% load i18n %}
+	{% block title %}{% trans 'Inicio' %}{% endblock %}
+
+
+
+	{% block content %}
+
+	{%for bus in buses%}
+  <p><img src="{{MEDIA_URL}}{{bus.foto}}">TIPO: {{bus.tipo}} PLACA {{bus.placa}}</p>
+
+  
+	
+
+	{% endfor %}
+
+
+
+
+	{% endblock %}
+
+	{% block style %}
+	{% endblock %}
+
+	{% block js %}
+
+	{% endblock %}

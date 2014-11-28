@@ -1,0 +1,35 @@
+	{% extends "index.html" %}
+	{% load i18n %}
+	{% block title %}{% trans 'Inicio' %}{% endblock %}
+
+
+
+	{% block content %}
+
+	<form action="/registardatos"  enctype="multipart/form-data" method="POST">
+		lugares <select name="lugares">
+		{%for destino in destinos%}
+			<option value=" destino.pk"> {{destino.lugar}}</option>
+		{% endfor %}
+		</select>
+		
+		buses <select name="buses">
+			{%for bus in buses%}
+
+				
+			<option value="{{bus.id}}"> {{bus.tipo}}</option>	
+
+			{% endfor %}
+		</select>
+				<input name="enviar" value="enviar" type="submit">
+{% csrf_token %}
+
+	</form>
+	{% endblock %}
+
+	{% block style %}
+	{% endblock %}
+
+	{% block js %}
+
+	{% endblock %}
